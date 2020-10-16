@@ -73,7 +73,6 @@ class ListarMensagens extends Component {
   } 
 
   async enviarMensagem() {
-    console.log( this.state.mensagem );
     let resultado = await API.enviarMensagemParaOGrupo(
       Cache.recuperarRegistro("usuario"),
       this.state.mensagem,
@@ -125,8 +124,6 @@ class ListarMensagens extends Component {
             </TouchableOpacity>
         </View>
         <ScrollView style={{backgroundColor:'#5682a3'}}>
-
-          { console.log(DATA) }
           <FlatList
             data={ this.state.mensagensDoGrupo }
             renderItem={renderItem}

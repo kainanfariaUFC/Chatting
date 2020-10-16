@@ -12,7 +12,6 @@ class API {
   }
 
   static async obterListaDosGruposDoUsuario( usuario ) {
-    console.log("Obtendo lista dos grupos para o usuário " + usuario);
     let dados = "usuario=" + usuario;
     return await this.realizarBuscaSimples("https://appfiocruz.000webhostapp.com/chat/listarGruposDoUsuario.php?" + dados);
   }
@@ -36,16 +35,12 @@ class API {
   }
 
   static async realizarBuscaSimples( link ) { 
-    console.log( link );
     let resposta = "";
-    
     await axios.get( link ).then((response) => {
       resposta = response.data.resultado; 
     }).catch((e) => { 
       resposta = e;//"Um erro ocorreu no lado do servidor. Tente novamente mais tarde.";
     });
-
-    console.log( resposta );
     return resposta;
   }
 

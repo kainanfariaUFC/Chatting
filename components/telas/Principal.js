@@ -95,8 +95,6 @@ class Principal extends Component {
             </TouchableOpacity>
         </View>
         <ScrollView style={{backgroundColor:'#5682a3'}}>
-
-          { console.log(DATA) }
           <FlatList
             data={ this.state.grupos }
             renderItem={renderItem}

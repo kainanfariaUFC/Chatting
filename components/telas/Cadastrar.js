@@ -43,7 +43,6 @@ class Cadastrar extends Component {
     if ( this.state.email != '' ) {
       // verifica se a senha e confirmar senha são equivalentes
       if ( this.state.senha == this.state.confirmarSenha ) {
-        //console.log("OK");
         let usuarioCadastrado = await API.cadastrar( this.state.email, this.state.senha );
         
         // se o usuário tiver sido cadastrado com sucesso, então..
