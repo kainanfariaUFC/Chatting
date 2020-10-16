@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "chatting",
+    "slug": "snack-bec08e76-dea5-4993-8f73-f997b4cf8b85",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/chat.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "mk.app.chatting"
+    }
+  }
+}
